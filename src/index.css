@@ -34,6 +34,12 @@ left:0;
 margin-left: -29px;
 outline: 3px solid rgb(214, 214, 214);
 border: 2px  solid white;
+}
 
+@media (max-width:768px){
+    .titles{
+
+        margin-left: 40px;
+    }
 
 }

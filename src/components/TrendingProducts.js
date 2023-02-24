@@ -15,7 +15,7 @@ const TrendingProducts = () => {
             <p className='titles font-bold text 3xl'>Trending Products</p>
             <hr className='py-2' />
             <div className="grid grid-cols-1 md:grid-cols-6  md:px-0 ">
-                <div className="col-span-2 my-3 md:my-0 mx-12 md:mx-0 border-black border-2 py-6 px-6 flex flex-col justify-center items-center">
+                <div className="col-span-2 my-3 md:my-0 mx-8 md:mx-0 border-black border-2 py-6 px-6 flex flex-col justify-center items-center">
                     <p className='uppercase font-bold'>offer ends in </p>
                     <div className="timer flex  gap-1 items-center text-[15px] mt-2  ">
                         <p className='bg-stone-200 p-2'>01</p>:

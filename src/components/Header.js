@@ -13,8 +13,9 @@ const Header = () => {
     <div className='flex max-w-5xl mx-auto font-[500] px-3 md:px-0 justify-between items-center text-[15px]'>
 
       <ul className='flex items-center md:hidden'>
-      <a href="" className='hover:text-red-300'><li><img src={logo} alt="" /></li></a>
       <p onClick={handleClick} className='hover:text-red-300'><HiMenuAlt1 size={30}/></p>
+
+      <a href="" className='hover:text-red-300'><li><img src={logo} alt="" /></li></a>
 
       </ul>
 
