@@ -4,7 +4,7 @@ import {BsInstagram,BsTwitter,BsYoutube,BsFacebook} from 'react-icons/bs'
 const Footer2 = () => {
     return (
         <div className="bg-gray-100">
-            <div className='max-w-5xl mx-auto py-10 flex justify-center items-center flex-col'>
+            <div className='max-w-5xl mx-auto py-3 lg:py-10 flex justify-center items-center flex-col'>
                 <img src={hurley} alt="" />
                 <div className="flex space-x-6">
                     <BsInstagram size={20}/>

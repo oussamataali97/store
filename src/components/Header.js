@@ -10,7 +10,7 @@ const Header = () => {
   }
   return (
     <>
-    <div className='flex max-w-5xl mx-auto font-[500] px-3 md:px-0 justify-between items-center text-[15px]'>
+    <div className='flex ease-linear duration-300 z-[50] max-w-5xl mx-auto font-[500] px-3 md:px-0 justify-between items-center text-[15px] relative'>
 
       <ul className='flex items-center md:hidden'>
       <p onClick={handleClick} className='hover:text-red-300'><HiMenuAlt1 size={30}/></p>
@@ -36,19 +36,19 @@ const Header = () => {
         <li className='flex flex-col'><span className='text-[10px]'>Total</span> $0,00</li>
     </ul>
 </div>
-{toggle && (
-  <ul className='flex flex-col md:hidden space-y-4 items-center w-full'>
+
+  <ul className={ toggle ? ' flex flex-col md:hidden absolute z-[20] h-screen left-[0px] w-72 bg-white  ease-in-out duration-500 ': 'flex flex-col md:hidden space-y-4 items-center w-full ease-linear duration-300 absolute  -left-[90rem]'}>
     <a href="" className='hover:text-red-300 hidden md:block'><li><img src={logo} alt="" /></li></a>
 
-    <a href="" className='hover:text-red-300 border-b-[1px] '><li>Home</li></a>
-        <a href="" className='hover:text-red-300 border-b-[1px] '><li>Shop</li></a>
-        <a href="" className='hover:text-red-300 border-b-[1px] '><li className='flex items-center'>Women <MdOutlineKeyboardArrowDown/></li></a>
-        <a href="" className='hover:text-red-300 border-b-[1px] '><li>Men</li></a>
-        <a href="" className='hover:text-red-300 border-b-[1px] '><li className='relative'>Sports <span className='bg-red-400 text-white absolute top-[-10px] right-[-25px] px-1 text-[10px] '>NEW</span></li></a>
+    <a href="" className='hover:text-red-300 border-b-[1px] py-3 px-2 '><li>Home</li></a>
+        <a href="" className='hover:text-red-300 border-b-[1px] py-3 px-2 '><li>Shop</li></a>
+        <a href="" className='hover:text-red-300 border-b-[1px] py-3 px-2 '><li className='flex items-center'>Women</li></a>
+        <a href="" className='hover:text-red-300 border-b-[1px] py-3 px-2 '><li>Men</li></a>
+        <a href="" className='hover:text-red-300 border-b-[1px] py-3 px-2 '><li className='relative'>Sports <span className='bg-red-400 text-white absolute top-[-6px] px-1 text-[10px] '>NEW</span></li></a>
 
 
     </ul>
-)}
+
 
 </>
   )
